@@ -13,7 +13,7 @@ import numpy as np
 import h5py
 
 if __name__ == '__main__': 
-    # build the computation graph
+    # build the computation  graph
     g = Graph()
     print ("Computation graph for ST-ResNet loaded\n")
     # create summary writers for logging train and test statistics
