@@ -20,10 +20,6 @@ if __name__ == '__main__':
     train_writer = tf.summary.FileWriter('./logdir/train', g.loss.graph)
     val_writer = tf.summary.FileWriter('./logdir/val', g.loss.graph)   
 
-
-
-
-
     # create dummy data with correct dimensions to check if data pipeline is working
     # shape of a input map: (,ap_height, map_width, depth(num of history maps))
     x_closeness = np.random.random(size=(1000, param.map_height, param.map_width, param.closeness_sequence_length * param.nb_flow))
